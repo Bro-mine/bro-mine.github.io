@@ -1,0 +1,3 @@
+This README file was supposed to contain more details, yet it doesn't...
+
+This will change, however, as I add on to this page. This README should come naturally as a result of this enterprise becoming larger over time.
