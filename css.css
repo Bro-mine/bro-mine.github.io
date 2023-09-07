@@ -11,11 +11,23 @@ nav a {
 footer {
   color: #ffffff;
 }
+a {
+}
 
-a:link {
-  color: green;
+a:link {i
+  color: #00ff00 
 }
 
 a:visited {
-  color: white;
+  color: #ffff00
 }
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
