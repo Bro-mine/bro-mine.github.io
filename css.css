@@ -14,7 +14,7 @@ footer {
 a {
 }
 
-a:link {i
+a:link {
   color: #00ff00 
 }
 
@@ -27,7 +27,7 @@ a:focus {
 }
 
 a:hover {
-  background: #00ff00
+  background: #ccff33
 }
 
 a:active {
