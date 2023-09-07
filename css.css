@@ -23,11 +23,9 @@ a:visited {
 }
 
 a:focus {
-  background: white
 }
 
 a:hover {
-  background: #ccff33
 }
 
 a:active {
