@@ -2,25 +2,41 @@
 <html>
 <head>
 	<title>Options for development</title>
-	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="../../css.css">
 </head>
 
 <body>
 
 	<h1>Options and choices for developing programs on the fx-9750GIII</h1>
 	<br>
-	<p>Developing programs in this calculator can be done in a few different ways. The fx-9750GIII comes with Casio Basic as its "main language", native to most, if not all, Casio calculators, and MicroPython. It can also be programmed in Assembly and C, most likely.</p>
+	<p>Developing programs in this calculator can be done in a few different ways. The fx-9750GIII comes with Casio Basic as its "main language", native to most, if not all, Casio calculators, and MicroPython. It can also be programmed in Assembly and C, and possibly even other languages.</p>
 	<h2>MicroPython</h2>
 		<p>MicroPython being included is a great advantage, as it can also run on other computers running Python. It means the programs written in it can be ported easily to, and from the calculator. The version of MicroPython that has been adapted to run on this calculator is slightly different than the Python you will find running on other machines, but it is likely that program ports would require minimal changes.</p>
 		<p>According to the manual, some special functions restricted to these calculators do exist. One such example is the <i>casioplot</i> module, which includes functions for drawing pixels and character strings. Moreover, the PYTHON mode lacks some modules and libraries that would be otherwise included in MicroPython - The manual specifies the existence of the math, random, and casioplot modules in the fx-9750GIII (software version 3.50). I do not know if it is possible to transfer new libraries to the PYTHON mode through the port included in the calculator.</p>
 		<p>Another possible advantage of using Python to develop programs in this calculator, is that there are more online resources dedicated to it, and performing the editing on a computer is more trivial than editing Casio BASIC (which uses certain specific symbols and codes for commands), requiring no SDK unless you use functions from the casioplot module, in which case testing programs on a computer becomes more complicated, but perhaps not impossible (see the external links section).</p>
+	<h2>Casio BASIC</h2>
+		<p>Casio BASIC is the language used in the PRGM mode, and works well enough for writing small programs (say, for executing simple physics formulae). It is a bit more of a hassle to write and run, as well as debug, since there are no official tools to run Casio BASIC outside of a calculator that I'm aware of, and editing software using the calculator is mostly not comfortable or ideal. Still, unofficial resources do exist (see the External Links section), although I have not tested them as of this time of writing.</p>
+		<p>As for learning Casio BASIC, there is a section on programming on the manual for the calculator, and there are websites that teach some of the basics, if not most of it.</p>
+	<h2>Assembly/C/C++/etc</h2>
+		<p>Like all other computers, the calculator must have a processor unit, and must run some sort of machine code: this means it is possible to program it in some sort of assembly language, and by extension, C and C++ (and all other languages that could produce machine code). This, however, is only theoretical, and in practice, having a working assembler and compilers depends heavily on the processor architecture being well documented. Obviously, community efforts could, and in this case, have managed to produce working SDKs for developing programs for the fx9750-GIII and other calculators.</p>
+		<p>Writing programs in this way is probably the most complicated way of approaching programming on a fx9750-GIII calculator, but it is possible. It may have some benefits in doing so, such as being able to better optimize specific programs, since access to the hardware is more direct. Still, this is probably not good for the faint of heart!
 
 	<h3>External Links</h3>
 	<ul>
 		<li><a href="https://www.casio.com/intl/support/calculators/manual/">Manuals for Casio calculators</a></li>
 		<li><a href="https://pypi.org/project/casioplot/">Casioplot for normal computers</a></li>
+		<li><a href="https://micropython.org/">MicroPython.org</a></li>
+		<br>
+		<li><a href="https://www.planet-casio.com/Fr/programmation">Tutorial for learning Casio BASIC (French)</a></li>
+		<li><a href="https://community.casiocalc.org/topic/2448-casio-basic-tutorial/">Tutorial for learning Casio BASIC (English)</a></li>
+		<br>
+		<li><a href="https://github.com/jm-/casint">Python interpreter for Casio BASIC</a></li>
+		<li><a href="https://github.com/Krevo/CasioBasicInterpreter">Javascript interpreter for Casio BASIC</a></li>
+		<li><a href="https://zezombye.github.io/CasioBasicInterpreter/index.html">Online interpreter for Casio BASIC</a></li>
+		<br>
+		<li><a href="https://www.planet-casio.com/Fr/infos/g35+e2">Planet Casio's resource on SDKs and compilers (French)</a></li>
 	</ul>
-	<p>NOTE: I have not tested this casioplot module on a computer, I really don't know whether that PyPi module is still maintained, or for how long it will continue to be. I'm merely linking it in case it proves to be useful for someone interested.</p>
+	<p>NOTE: I have not tested this casioplot module on a computer, I really don't know whether that PyPi module is still maintained, or for how long it will continue to be. I'm merely linking it in case it proves to be useful for someone interested. This is also valid for the Github projects relating to external Casio BASIC interpreters. Remember, I, too, am learning as I go.</p>
 
 </body>
 </html>
